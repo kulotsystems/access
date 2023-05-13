@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Redirect requests to public folder
+RewriteRule ^$ public/ [L]
+
+# Deny access to all other files and folders
+RewriteCond %{REQUEST_URI} !^/access/public/ [NC]
+RewriteRule ^ - [R=404,L]

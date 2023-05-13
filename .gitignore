@@ -1,0 +1,6 @@
+.idea
+.vscode
+.DS_Store
+database.laccdb
+node_modules
+vendor
